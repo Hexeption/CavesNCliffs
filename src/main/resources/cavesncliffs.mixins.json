@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "dev.hexeption.template.mixin",
+  "package": "dev.hexeption.cavesncliffs.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
   ],

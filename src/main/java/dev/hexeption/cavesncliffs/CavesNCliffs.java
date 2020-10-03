@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Template for Fabric Mods
+ * CavesNCliffs
  * Copyright (C) 2020  Hexeption (Keir Davis)
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,11 +16,17 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  ******************************************************************************/
 
-package dev.hexeption.template;
+package dev.hexeption.cavesncliffs;
 
 import net.fabricmc.api.ModInitializer;
 
-public class Template implements ModInitializer {
+/**
+ * CavesNCliffs
+ *
+ * @author Hexeption admin@hexeption.co.uk
+ * @since 03/10/2020 - 07:08 pm
+ */
+public class CavesNCliffs implements ModInitializer {
 
     @Override
     public void onInitialize() {
