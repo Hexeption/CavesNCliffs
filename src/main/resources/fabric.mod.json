@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "template",
+  "version": "${version}",
+  "name": "Template",
+  "description": "A template for Fabric Mods ",
+  "authors": [
+    "Hexeption"
+  ],
+  "contact": {
+    "homepage": "https://hexeption.dev",
+    "sources": "https://github.com/Hexeption/Hex-Fabric-Template"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/template/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.hexeption.template.Template"
+    ]
+  },
+  "mixins": [
+    "template.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.8.2+build.194",
+    "fabric": "*",
+    "minecraft": "1.16.1"
+  }
+}
