@@ -16,36 +16,29 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  ******************************************************************************/
 
-package dev.hexeption.cavesncliffs;
+package dev.hexeption.cavesncliffs.registry;
 
-import dev.hexeption.cavesncliffs.registry.ModBlocks;
-import dev.hexeption.cavesncliffs.registry.ModItems;
-import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
-import net.minecraft.util.Identifier;
+import dev.hexeption.cavesncliffs.CavesNCliffs;
+import net.minecraft.item.Item;
+import net.minecraft.util.registry.Registry;
 
 /**
- * CavesNCliffs
+ * ModItems
  *
  * @author Hexeption admin@hexeption.co.uk
- * @since 03/10/2020 - 07:08 pm
+ * @since 05/10/2020 - 08:58 pm
  */
-public class CavesNCliffs implements ModInitializer {
+public class ModItems {
 
-    public static final String MOD_ID = "cavesncliffs";
-
-    public static final ItemGroup GROUP = FabricItemGroupBuilder.build(id("group"), () -> new ItemStack(Items.ACACIA_FENCE));
-
-    public static Identifier id(String name) {
-        return new Identifier(MOD_ID, name);
+    static Item.Settings newSettings() {
+        return new Item.Settings().group(CavesNCliffs.GROUP);
     }
 
-    @Override
-    public void onInitialize() {
-        ModBlocks.init();
-        ModItems.init();
+    public static void init() {
+
+    }
+
+    protected static <T extends Item> T register(String name, T item) {
+        return Registry.register(Registry.ITEM, CavesNCliffs.id(name), item);
     }
 }
