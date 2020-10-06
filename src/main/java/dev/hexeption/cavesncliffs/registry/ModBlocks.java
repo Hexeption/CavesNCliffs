@@ -23,6 +23,7 @@ import java.util.function.Function;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.SlabBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.registry.Registry;
@@ -49,7 +50,7 @@ public class ModBlocks {
     public static final Block COPPER_ORE = register("copper_ore", new Block(FabricBlockSettings.copy(Blocks.IRON_ORE)));
     public static final Block COPPER_BLOCK = register("copper_block", new Block(FabricBlockSettings.copy(Blocks.IRON_BLOCK)));
     public static final Block COPPER_STAIRS = register("copper_stairs", new Block(FabricBlockSettings.copy(Blocks.QUARTZ_STAIRS)));
-    public static final Block COPPER_SLAB = register("copper_slab", new Block(FabricBlockSettings.copy(Blocks.QUARTZ_SLAB)));
+    public static final Block COPPER_SLAB = register("copper_slab", new SlabBlock(FabricBlockSettings.copy(Blocks.QUARTZ_SLAB)));
 
     public static final Block CLAY_POT = register("clay_pot", new Block(FabricBlockSettings.copy(Blocks.CLAY)));
 

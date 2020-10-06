@@ -17,6 +17,9 @@
   "entrypoints": {
     "main": [
       "dev.hexeption.cavesncliffs.CavesNCliffs"
+    ],
+    "client": [
+      "dev.hexeption.cavesncliffs.client.ClientCavesNCliffs"
     ]
   },
   "mixins": [

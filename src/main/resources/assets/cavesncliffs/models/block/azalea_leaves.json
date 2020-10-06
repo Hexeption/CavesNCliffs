@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "cavesncliffs:block/azalea_leaves"
+  }
+}
